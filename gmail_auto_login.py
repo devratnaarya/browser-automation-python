@@ -9,12 +9,12 @@ driver = webdriver.Chrome(browser_config.get_driver_path())
 driver.get("http://www.gmail.com")
 
 loginId = WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.XPATH, "//*[@id='identifierId']")))
-loginId.send_keys("adevratna@gmail.com")
+loginId.send_keys("xxxx@gmail.com")
 
 WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "identifierNext"))).click()
 
 password = WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.XPATH, "//*[@name='password']")))
-password.send_keys("988720689512")
+password.send_keys("xxxxx")
 
 WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "passwordNext"))).click()
 
